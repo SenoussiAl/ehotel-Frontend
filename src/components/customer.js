@@ -1,5 +1,7 @@
 import React from 'react'
 import {Link} from "react-router-dom"
+import Button from '@material-ui/core/Button';
+
 
     function CreateUpdate(props){
         if(props.new === "true"){
@@ -85,18 +87,8 @@ class Customer extends React.Component{
             <div>
                 <div style={{display: 'flex', justifyContent: 'center'}}>
                     <form className="ui form">
-                        <h4 className="ui dividing header">Customer Information</h4>
-                        <div className="field">
-                            <label>Enter your information</label>
-                            <div className="two fields">
-                                <div className="field">
-                                    <input type="text" id={"NAS"} name={"NAS"}placeholder="Your NAS"/>
-                                </div>
-                                <div className="field">
-                                    <input type="text" id={"email"} placeholder="Email" />
-                                </div>
-                            </div>
-
+                        <h2 className="ui dividing header">Customer Information</h2>                            
+                        <label>Enter your information</label>
                             <div className="three fields">
                                 <div className="field">
                                     <input type="text" id={"firstName"} placeholder="First Name"/>
@@ -108,11 +100,27 @@ class Customer extends React.Component{
                                     <input type="text" id={"lastName"} placeholder="Last Name"/>
                                 </div>
                             </div>
+                        <div className="field">
+
+                            <div className="field">
+                                <div className="field">
+                                <label>NAS</label>
+                                    <input type="text" id={"NAS"} name={"NAS"}placeholder="Your NAS"/>
+                                </div>
+                                </div>
+                                <div className="field">
+                                <div className="field">
+                                <label>Email</label>
+                                    <input type="text" id={"email"} placeholder="Email" />
+                                </div>
+                            </div>
+
+
 
 
                         </div>
                         <div className="field">
-                            <label> Password</label>
+                            <label>Password</label>
                             <div className="twelve wide field">
                                 <input type="text"  id={"password"} placeholder="Password"/>
                             </div>
