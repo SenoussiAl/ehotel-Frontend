@@ -57,7 +57,7 @@ class Customer extends React.Component{
         console.log(this.props.service);
 
 
-        fetch('http://localhost:5432//api/v1/user/register', {
+        fetch('http://localhost:5432/api/v1/user/register', {
             method: "POST",
             body:JSON.stringify(data)
 
